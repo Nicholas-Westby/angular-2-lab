@@ -1,0 +1,12 @@
+# Visual Studio
+###############
+**/obj/Debug/
+**/obj/Release/
+**/bin/
+.vs
+*.csproj.user
+
+# NuGet
+#######
+packages
+*.nupkg
