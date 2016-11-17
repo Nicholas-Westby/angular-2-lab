@@ -2,6 +2,12 @@ This repository is being used to experiment with Angular 2 (e.g., server side re
 
 ![Hello World](images/hello.png?raw=true "Hello World")
 
+# Compiling
+
+Before compiling, run `npm i`. This will install the Node modules.
+
+To compile, run `node run tsc`. This will run the TypeScript compiler.
+
 # Playground server.ts
 
 https://github.com/angular/universal/blob/master/examples/playground/src/server.ts
