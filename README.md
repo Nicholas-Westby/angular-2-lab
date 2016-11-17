@@ -21,3 +21,12 @@ That serializeModule function is what I suspect does the server side rendering.
 http://www.syntaxsuccess.com/viewarticle/server-side-rendering-in-angular-2.0
 
 Shows a basic example of rendering a sitemap on the server.
+
+# ASP.NET Core bootstrap-server.ts
+
+https://github.com/MarkPieszak/aspnetcore-angular2-universal/blob/master/Client/bootstrap-server.ts
+
+This actually has some comments and looks relatively simple.
+Seems to do the serialization using serializeModule as seen elsewhere.
+
+One question I still have is where the tag helpers are defined (i.e., asp-prerender-module, asp-prerender-webpack-config, asp-prerender-data). These could be useful in figuring out how this repo has managed to call Node.js from C#.
