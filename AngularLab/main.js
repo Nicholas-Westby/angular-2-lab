@@ -1,7 +1,7 @@
 return function(data, callback) {
 
     const doc = `
-            <!DOCTYPE html>\n
+            <!DOCTYPE html>
             <html>
                 <head></head>
                 <body>

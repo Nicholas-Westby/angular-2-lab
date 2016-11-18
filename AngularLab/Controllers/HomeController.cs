@@ -36,7 +36,7 @@
         {
 
             // Variables.
-            var scriptPath = HttpContext.Server.MapPath("~/main.js");
+            var scriptPath = HttpContext.Server.MapPath("~/main.compiled.js");
             var javaScript = System.IO.File.ReadAllText(scriptPath);
             var func = EdgeJs.Edge.Func(javaScript);
 
