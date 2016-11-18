@@ -4,6 +4,8 @@ This repository is being used to experiment with Angular 2 (e.g., server side re
 
 # Compiling
 
+Open a terminal and change directory to the AngularLab folder (the one that contains the package.json).
+
 Before compiling, run `npm i`. This will install the Node modules.
 
 To compile, run `node run tsc`. This will run the TypeScript compiler.
