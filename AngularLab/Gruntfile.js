@@ -16,9 +16,13 @@ module.exports = function (grunt) {
                 separator: "\r\n"
             },
             prd: {
+                // Can use "start-function.js" and "end-function.js" to wrap one of the
+                // files to ensure it doesn't execute.
                 src: [
                     "node_modules/reflect-metadata/Reflect.js",
+                    //"start-function.js",
                     "app.compiled.js",
+                    //"end-function.js",
                     "main.js"],
                 dest: "main.compiled.js"
             }
