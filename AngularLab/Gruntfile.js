@@ -16,7 +16,10 @@ module.exports = function (grunt) {
                 separator: "\r\n"
             },
             prd: {
-                src: ["app.compiled.js", "main.js"],
+                src: [
+                    "node_modules/reflect-metadata/Reflect.js",
+                    "app.compiled.js",
+                    "main.js"],
                 dest: "main.compiled.js"
             }
         }
