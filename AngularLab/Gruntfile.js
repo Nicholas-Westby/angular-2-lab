@@ -7,7 +7,7 @@ module.exports = function (grunt) {
         browserify: {
             prd: {
                 files: {
-                    'app.compiled.js': ['app/main.js']
+                    'app.compiled.js': ['wwwroot/dist/main.js']
                 }
             }
         },
@@ -27,6 +27,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-concat");
 
     // Register Grunt tasks.
-    grunt.task.registerTask('prd', ['browserify:prd', 'concat:prd']);
+    //grunt.task.registerTask('prd', ['browserify:prd', 'concat:prd']);
+    grunt.task.registerTask('prd', ['concat:prd']);
 
 };
