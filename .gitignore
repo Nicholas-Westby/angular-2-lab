@@ -6,6 +6,9 @@
 .vs
 *.csproj.user
 
+# WebStorm
+.idea/
+
 # NuGet
 #######
 packages
