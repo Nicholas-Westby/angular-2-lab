@@ -1,0 +1,1 @@
+angularLabGlobal.guidGenerator = require("uuid");
