@@ -13,3 +13,6 @@
 #######
 packages
 *.nupkg
+
+# Node.
+node_modules/
