@@ -13,6 +13,8 @@ declare var Zone: any;
 
 export default function (params: IParams): Promise<{ html: string, globals?: any }> {
 
+    const thing = `i am a test`;
+
     const doc = `
         <!DOCTYPE html>\n
         <html>
@@ -84,3 +86,5 @@ export interface IParams {
     absoluteUrl: string;
     data: {}; // custom user data sent from server (through asp-prerender-data="" attribute on index.cshtml)
 }
+
+var theServerTest = "theServerTest";

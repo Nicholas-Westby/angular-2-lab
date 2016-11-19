@@ -7,7 +7,8 @@ module.exports = function (grunt) {
         browserify: {
             prd: {
                 files: {
-                    'app.compiled.js': ['wwwroot/dist/main.js']
+                    //'app.compiled.js': ['wwwroot/dist/main.js'],
+                    'experiment1.compiled.js': ['experiment1/experiment1.js']
                 }
             }
         },
@@ -19,9 +20,10 @@ module.exports = function (grunt) {
                 // Can use "start-function.js" and "end-function.js" to wrap one of the
                 // files to ensure it doesn't execute.
                 src: [
-                    "node_modules/reflect-metadata/Reflect.js",
+                    //"node_modules/reflect-metadata/Reflect.js",
                     //"start-function.js",
-                    "app.compiled.js",
+                    //"app.compiled.js",
+                    "experiment1.compiled.js",
                     //"end-function.js",
                     "main.js"],
                 dest: "main.compiled.js"
@@ -35,6 +37,6 @@ module.exports = function (grunt) {
 
     // Register Grunt tasks.
     //grunt.task.registerTask('prd', ['browserify:prd', 'concat:prd']);
-    grunt.task.registerTask('prd', ['concat:prd']);
+    grunt.task.registerTask('prd', ['browserify:prd', 'concat:prd']);
 
 };

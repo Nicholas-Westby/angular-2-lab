@@ -33,3 +33,4 @@ if ((<any>module).hot) {
     bootApplication();
 }
 
+var theClientTest = "theClientTest";

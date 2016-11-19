@@ -32,7 +32,7 @@ module.exports = setTypeScriptAlias(require('./tsconfig.json'), {
 
     // What are our "entry" points for webpack to create "Chunks"
     entry: {
-        main: ['./Client/bootstrap-client.ts']
+        main: ['./Client/bootstrap-server.ts']
     },
 
     // Where should webpack put files after they're processed

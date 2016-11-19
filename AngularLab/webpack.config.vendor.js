@@ -10,6 +10,8 @@ var isDevelopment = process.env.ASPNETCORE_ENVIRONMENT === 'Production' ? false 
 // Sourcemaps (for Development only)
 var devTool = isDevelopment ? 'source-map' : '';
 
+var theWebPackTest = 'willItWork?';
+
 module.exports = {
     
     devtool: devTool,

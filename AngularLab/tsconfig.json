@@ -27,6 +27,9 @@
       "app-components": [ "./Client/components" ]
     }
   },
+  "files": [
+    "./Client/bootstrap-server.ts"
+  ],
   "exclude": [ "bin", "wwwroot", "node_modules" ],
   "compileOnSave": false,
   "awesomeTypescriptLoaderOptions": {
