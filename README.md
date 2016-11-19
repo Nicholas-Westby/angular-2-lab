@@ -119,3 +119,9 @@ module.exports = function (callback, first, second) {
 
 Unsure of advantages of using this over Edge.js.
 They seem similar.
+
+# Music Store
+
+https://github.com/aspnet/JavaScriptServices/tree/dev/samples/angular/MusicStore
+
+Server side rendering example.
