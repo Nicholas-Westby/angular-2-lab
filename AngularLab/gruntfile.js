@@ -7,7 +7,7 @@ module.exports = function (grunt) {
         browserify: {
             default: {
                 files: {
-                    "scripts/sample-output.js": ["scripts/sample-input.js"]
+                    "scripts/browserify.compiled.js": ["scripts/browserify.js"]
                 }
             }
         },
@@ -18,7 +18,7 @@ module.exports = function (grunt) {
             default: {
                 src: [
                     "scripts/pre-script.js",
-                    "scripts/sample-output.js",
+                    "scripts/browserify.compiled.js",
                     "scripts/main.js",
                     "scripts/post-script.js"
                 ],
