@@ -21,7 +21,6 @@ module.exports = function (grunt) {
                     "scripts/pre-script.js",
                     "scripts/browserify.compiled.js",
                     "scripts/main.js",
-                    "scripts/typescript-main.compiled.js",
                     "scripts/post-script.js"
                 ],
                 dest: "scripts/main.compiled.js"
@@ -33,5 +32,5 @@ module.exports = function (grunt) {
             }
         }
     });
-    grunt.task.registerTask("default", ["browserify:default", "run:typescript", "concat:default"]);
+    grunt.task.registerTask("default", ["run:typescript", "browserify:default", "concat:default"]);
 };

@@ -197,19 +197,28 @@ module.exports = uuid;
 
 },{"./lib/rng":1}],3:[function(require,module,exports){
 angularLabGlobal.guidGenerator = require("uuid");
-},{"uuid":2}]},{},[3]);
+angularLabGlobal.calculateSomething = require("../type-scripts.compiled/type-scripts/typescript-main").calculateSomething;
+},{"../type-scripts.compiled/type-scripts/typescript-main":4,"uuid":2}],4:[function(require,module,exports){
+"use strict";
+require("../universal/polyfills/polyfills.node");
+function calculateSomething(num1, num2) {
+    return num1 + num2;
+}
+exports.calculateSomething = calculateSomething;
+
+},{"../universal/polyfills/polyfills.node":5}],5:[function(require,module,exports){
+// https://github.com/angular/universal/blob/master/examples/playground/src/polyfills/polyfills.node.ts
+
+},{}]},{},[3]);
 
 function generateMessage(data, callback) {
     var guidGenerator = angularLabGlobal.guidGenerator;
+    var calculateSomething = angularLabGlobal.calculateSomething;
     var someValue = calculateSomething(1, 2);
     var returnMessage = "Hello, " + data + ", I'm running from Node.js " + process.version + ". " +
         "Generated GUID: " + guidGenerator.v4() + ". " +
         "Value from TypeScript function: " + someValue.toString() + ".";
     callback(null, returnMessage);
 }
-function calculateSomething(num1, num2) {
-    return num1 + num2;
-}
-
     return generateMessage;
 })();
