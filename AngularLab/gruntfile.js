@@ -21,6 +21,7 @@ module.exports = function (grunt) {
                     "scripts/pre-script.js",
                     "scripts/browserify.compiled.js",
                     "scripts/main.js",
+                    "scripts/typescript-main.compiled.js",
                     "scripts/post-script.js"
                 ],
                 dest: "scripts/main.compiled.js"

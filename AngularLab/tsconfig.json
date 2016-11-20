@@ -2,12 +2,12 @@
   "compilerOptions": {
     "rootDir": ".",
     "baseUrl": ".",
-    "outFile": "scripts/sample.compiled.js",
+    "outFile": "scripts/typescript-main.compiled.js",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipDefaultLibCheck": true
   },
   "files": [
-    "./type-scripts/sample.ts"
+    "./type-scripts/typescript-main.ts"
   ]
 }
