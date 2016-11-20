@@ -5,13 +5,17 @@
   "main": "scripts/main.js",
   "dependencies": {},
   "devDependencies": {
+    "@angular/core": "^2.2.1",
+    "@types/core-js": "^0.9.34",
+    "core-js": "^2.4.1",
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-run": "^0.6.0",
-    "systemjs": "^0.19.41",
+    "rxjs": "^5.0.0-beta.12",
     "typescript": "^2.0.10",
-    "uuid": "^3.0.0"
+    "uuid": "^3.0.0",
+    "zone.js": "^0.6.26"
   },
   "scripts": {
     "tsc": "tsc"
