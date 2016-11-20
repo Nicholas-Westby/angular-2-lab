@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outFile": "scripts/sample.compiled.js",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipDefaultLibCheck": true
+  },
+  "files": [
+    "./type-scripts/sample.ts"
+  ]
+}

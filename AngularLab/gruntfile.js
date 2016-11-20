@@ -3,6 +3,7 @@
 module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-browserify");
     grunt.loadNpmTasks("grunt-contrib-concat");
+    grunt.loadNpmTasks('grunt-run');
     grunt.initConfig({
         browserify: {
             default: {
@@ -24,7 +25,12 @@ module.exports = function (grunt) {
                 ],
                 dest: "scripts/main.compiled.js"
             }
+        },
+        run: {
+            typescript: {
+                exec: "npm run tsc"
+            }
         }
     });
-    grunt.task.registerTask("default", ["browserify:default", "concat:default"]);
+    grunt.task.registerTask("default", ["browserify:default", "run:typescript", "concat:default"]);
 };
