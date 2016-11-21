@@ -1,4 +1,3 @@
-// https://github.com/angular/universal/blob/master/examples/playground/src/server.ts
 "use strict";
 // This is just a sample function that is being called by main.js via browserify.js
 // (both in the scripts folder).
