@@ -21,49 +21,49 @@ var store_1 = require('@ngrx/store');
 var effects_1 = require('@ngrx/effects');
 var ng2_bootstrap_1 = require('ng2-bootstrap/ng2-bootstrap');
 // Main "APP" Root Component
-var app_1 = require('app');
+var _1 = require('../');
 // Component imports
-var app_components_1 = require('app-components');
+var components_1 = require('../../components');
 // Container (aka: "pages") imports
-var app_containers_1 = require('app-containers');
+var containers_1 = require('../../containers');
 // Provider (aka: "shared" | "services") imports
-var app_shared_1 = require('app-shared');
+var shared_1 = require('../../shared');
 //////////////////////////////////////////////////////////////////
 // This imports the variable that, in a hot loading situation, holds
 // a reference to the previous application's last state before
 // it was destroyed.
-var app_2 = require('app');
+var _2 = require('../');
 var MODULES = [
     // Do NOT include UniversalModule, HttpModule, or JsonpModule here
     // This has ALL the "Common" stuff (CommonModule, FormsModule, ReactiveFormsModule, etc etc)
     // You would import this into your child NgModules so you don't need to duplicate so much code
-    app_1.BaseSharedModule,
+    _1.BaseSharedModule,
     // Angular
     router_1.RouterModule,
     // NgRx
-    store_1.StoreModule.provideStore(app_1.appReducer, app_2.appState),
+    store_1.StoreModule.provideStore(_1.appReducer, _2.appState),
     effects_1.EffectsModule,
     // Bootstrap
     ng2_bootstrap_1.Ng2BootstrapModule,
     // Routing
-    router_1.RouterModule.forRoot(app_1.ROUTES)
+    router_1.RouterModule.forRoot(_1.ROUTES)
 ];
 var PIPES = [];
 var COMPONENTS = [
     // put shared components here
-    app_1.AppComponent,
-    app_components_1.NavMenuComponent,
-    app_containers_1.RestTestComponent,
-    app_containers_1.HomeComponent,
-    app_containers_1.LoginComponent,
-    app_containers_1.BootstrapComponent,
-    app_containers_1.ExamplesComponent
+    _1.AppComponent,
+    components_1.NavMenuComponent,
+    containers_1.RestTestComponent,
+    containers_1.HomeComponent,
+    containers_1.LoginComponent,
+    containers_1.BootstrapComponent,
+    containers_1.ExamplesComponent
 ];
 var PROVIDERS = [
     // put shared services here
-    app_shared_1.CacheService,
-    app_shared_1.HttpCacheService,
-    app_shared_1.ApiGatewayService
+    shared_1.CacheService,
+    shared_1.HttpCacheService,
+    shared_1.ApiGatewayService
 ];
 var AppCommonModule = (function () {
     function AppCommonModule() {

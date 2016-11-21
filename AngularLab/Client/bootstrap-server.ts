@@ -1,4 +1,4 @@
-import './__2.1.1.workaround.ts';
+import './__2.1.1.workaround';
 import 'angular2-universal-polyfills/node';
 
 import { enableProdMode } from '@angular/core';

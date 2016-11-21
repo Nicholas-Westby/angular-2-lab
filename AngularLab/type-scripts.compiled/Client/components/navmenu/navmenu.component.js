@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var store_1 = require('@ngrx/store');
-var app_1 = require('app');
+var app_1 = require('../../app');
 var NavMenuComponent = (function () {
     // Use "constructor"s only for dependency injection
     function NavMenuComponent(store) {
@@ -33,8 +33,7 @@ var NavMenuComponent = (function () {
     NavMenuComponent = __decorate([
         core_1.Component({
             selector: 'app-nav-menu',
-            template: require('./navmenu.component.html'),
-            styles: [require('./navmenu.component.css')]
+            template: "\n\n<ul class=\"nav\">\n    <li [routerLinkActive]=\"['link-active']\">\n        <a [routerLink]=\"['/home']\">\n            <span class=\"glyphicon glyphicon-home\"></span> Home\n        </a>\n    </li>\n    <li [routerLinkActive]=\"['link-active']\">\n        <a [routerLink]=\"['/examples']\">\n            <span class=\"glyphicon glyphicon-education\"></span> Platform Examples\n        </a>\n    </li>\n    <li [routerLinkActive]=\"['link-active']\">\n        <a [routerLink]=\"['/bootstrap']\">\n            <span class=\"glyphicon glyphicon-education\"></span> Bootstrap Demo\n        </a>\n    </li>\n    <li [routerLinkActive]=\"['link-active']\">\n        <a [routerLink]=\"['/rest-test']\">\n            <span class=\"glyphicon glyphicon-education\"></span> RestAPI Demo\n        </a>\n    </li>\n    <li [routerLinkActive]=\"['link-active']\">\n        <a [routerLink]=\"['/faq']\">\n            <span class=\"glyphicon glyphicon-education\"></span> FAQ\n        </a>\n    </li>\n    <li *ngIf=\"!loggedIn$\" [routerLinkActive]=\"['link-active']\">\n        <a [routerLink]=\"['/login']\">\n            <span class=\"glyphicon glyphicon-user\"></span> Login\n        </a>\n    </li>\n    <li *ngIf=\"loggedIn$\" (click)=\"logout()\">\n        <a [routerLink]=\"['/']\">\n            <span class=\"glyphicon glyphicon-user\"></span> Welcome, {{ user$.username }} - Logout\n        </a>\n    </li>\n</ul>\n\n"
         }), 
         __metadata('design:paramtypes', [store_1.Store])
     ], NavMenuComponent);

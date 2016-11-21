@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var app_shared_1 = require('app-shared');
+var shared_1 = require('../../shared');
 var RestTestComponent = (function () {
     // Use "constructor"s only for dependency injection
     function RestTestComponent(httpCache) {
@@ -26,7 +26,7 @@ var RestTestComponent = (function () {
     RestTestComponent = __decorate([
         core_1.Component({
             selector: 'app-rest-test',
-            template: require('./rest-test.component.html'),
+            template: "\n<h1>This is a RestAPI Example (hitting WebAPI in our case)</h1>\n\n<p>Let's get some fake users from Rest:</p>\n\n<p *ngIf=\"!users\"><em>Loading...</em></p>\n\n<table class=\"table\" *ngIf=\"users\">\n    <thead>\n        <tr>\n            <th>User ID</th>\n            <th>Name</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr *ngFor=\"let user of users\" [@flyInOut]>\n            <td>{{ user.id }}</td>\n            <td>{{ user.name }}</td>\n        </tr>\n    </tbody>\n</table>\n\n",
             animations: [
                 // Animation example
                 // Triggered in the ngFor with [@flyInOut]
@@ -42,7 +42,7 @@ var RestTestComponent = (function () {
                 ])
             ]
         }), 
-        __metadata('design:paramtypes', [app_shared_1.HttpCacheService])
+        __metadata('design:paramtypes', [shared_1.HttpCacheService])
     ], RestTestComponent);
     return RestTestComponent;
 }());

@@ -7,9 +7,9 @@ import { Store, StoreModule } from '@ngrx/store';
 import { UniversalModule, isBrowser, isNode } from 'angular2-universal/node';
 
 import { AppCommonModule } from './app.common.module';
-import { AppComponent } from 'app';
+import { AppComponent } from '../';
 // Universal : XHR Cache
-import { CacheService } from 'app-shared';
+import { CacheService } from '../../shared';
 
 export function getRequest() {
     return Zone.current.get('req') || {};

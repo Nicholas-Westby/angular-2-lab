@@ -5,3 +5,12 @@ export function calculateSomething(num1, num2) {
 }
 
 //TODO: Call bootstrap-server to render some markup...
+
+import Renderer from "../Client/bootstrap-server";
+
+Renderer({
+    origin: "",
+    url: "",
+    absoluteUrl: "",
+    data: {}
+});

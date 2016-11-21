@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var router_1 = require('@angular/router');
 var store_1 = require('@ngrx/store');
 var core_1 = require('@angular/core');
-var app_1 = require('app');
+var app_1 = require('../../app');
 // Demo model
 var UserModel = (function () {
     function UserModel() {

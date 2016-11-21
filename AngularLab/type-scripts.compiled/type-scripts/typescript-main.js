@@ -5,4 +5,11 @@ function calculateSomething(num1, num2) {
     return num1 + num2;
 }
 exports.calculateSomething = calculateSomething;
-//TODO: Call bootstrap-server to render some markup... 
+//TODO: Call bootstrap-server to render some markup...
+var bootstrap_server_1 = require("../Client/bootstrap-server");
+bootstrap_server_1.default({
+    origin: "",
+    url: "",
+    absoluteUrl: "",
+    data: {}
+});

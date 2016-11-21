@@ -204,6 +204,15 @@ function calculateSomething(num1, num2) {
     return num1 + num2;
 }
 exports.calculateSomething = calculateSomething;
-//TODO: Call bootstrap-server to render some markup... 
+//TODO: Call bootstrap-server to render some markup...
+/*
+import Renderer from "../Client/bootstrap-server";
+
+Renderer({
+    origin: "",
+    url: "",
+    absoluteUrl: "",
+    data: {}
+});*/ 
 
 },{}]},{},[3]);

@@ -12,9 +12,9 @@ var core_1 = require('@angular/core');
 // for AoT we need to manually split universal packages (/browser & /node)
 var node_1 = require('angular2-universal/node');
 var app_common_module_1 = require('./app.common.module');
-var app_1 = require('app');
+var _1 = require('../');
 // Universal : XHR Cache
-var app_shared_1 = require('app-shared');
+var shared_1 = require('../../shared');
 function getRequest() {
     return Zone.current.get('req') || {};
 }
@@ -33,7 +33,7 @@ var AppServerModule = (function () {
          */
         this.universalDoDehydrate = function (universalCache) {
             console.log('universalDoDehydrate ****');
-            universalCache[app_shared_1.CacheService.KEY] = JSON.stringify(_this.cache.dehydrate());
+            universalCache[shared_1.CacheService.KEY] = JSON.stringify(_this.cache.dehydrate());
         };
         /** Universal Cache "hook"
          * Clear the cache after it's rendered
@@ -44,7 +44,7 @@ var AppServerModule = (function () {
     }
     AppServerModule = __decorate([
         core_1.NgModule({
-            bootstrap: [app_1.AppComponent],
+            bootstrap: [_1.AppComponent],
             imports: [
                 // "UniversalModule" Must be first import.
                 // ** NOTE ** : This automatically imports BrowserModule, HttpModule, and JsonpModule for Browser,
@@ -61,7 +61,7 @@ var AppServerModule = (function () {
                 { provide: 'res', useFactory: getResponse }
             ]
         }), 
-        __metadata('design:paramtypes', [app_shared_1.CacheService])
+        __metadata('design:paramtypes', [shared_1.CacheService])
     ], AppServerModule);
     return AppServerModule;
 }());

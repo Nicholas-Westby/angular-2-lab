@@ -2,7 +2,7 @@ import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Component, OnInit } from '@angular/core';
 
-import { AppState, LOGIN_USER } from 'app';
+import { AppState, LOGIN_USER } from '../../app';
 
 // Demo model
 export class UserModel {

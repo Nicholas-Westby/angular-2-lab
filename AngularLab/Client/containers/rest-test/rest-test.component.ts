@@ -4,11 +4,33 @@ import {
     trigger, state, style, transition, animate } from '@angular/core';
 
 import { Http } from '@angular/http';
-import { HttpCacheService } from 'app-shared';
+import { HttpCacheService } from '../../shared';
 
 @Component({
     selector: 'app-rest-test',
-    template: require('./rest-test.component.html'),
+    template: `
+<h1>This is a RestAPI Example (hitting WebAPI in our case)</h1>
+
+<p>Let's get some fake users from Rest:</p>
+
+<p *ngIf="!users"><em>Loading...</em></p>
+
+<table class="table" *ngIf="users">
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users" [@flyInOut]>
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+        </tr>
+    </tbody>
+</table>
+
+`,
     animations: [
         // Animation example
         // Triggered in the ngFor with [@flyInOut]

@@ -15,10 +15,10 @@ import { EffectsModule } from '@ngrx/effects';
 import { Ng2BootstrapModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 // Main "APP" Root Component
-import { BaseSharedModule, AppComponent, ROUTES, appReducer } from 'app';
+import { BaseSharedModule, AppComponent, ROUTES, appReducer } from '../';
 
 // Component imports
-import { NavMenuComponent } from 'app-components';
+import { NavMenuComponent } from '../../components';
 
 // Container (aka: "pages") imports
 import {
@@ -27,20 +27,20 @@ import {
     BootstrapComponent,
     LoginComponent,
     ExamplesComponent
-} from 'app-containers';
+} from '../../containers';
 
 // Provider (aka: "shared" | "services") imports
 import {
     HttpCacheService, CacheService, // Universal : XHR Cache
     ApiGatewayService
-} from 'app-shared';
+} from '../../shared';
 
 //////////////////////////////////////////////////////////////////
 
 // This imports the variable that, in a hot loading situation, holds
 // a reference to the previous application's last state before
 // it was destroyed.
-import { appState } from 'app';
+import { appState } from '../';
 
 const MODULES = [
     // Do NOT include UniversalModule, HttpModule, or JsonpModule here

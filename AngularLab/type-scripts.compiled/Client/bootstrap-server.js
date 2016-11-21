@@ -1,5 +1,5 @@
 "use strict";
-require('./__2.1.1.workaround.ts');
+require('./__2.1.1.workaround');
 require('angular2-universal-polyfills/node');
 var core_1 = require('@angular/core');
 var angular2_universal_1 = require('angular2-universal');
