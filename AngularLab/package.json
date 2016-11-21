@@ -19,6 +19,7 @@
     "@ngrx/effects": "2.0.0",
     "@ngrx/store": "2.2.1",
     "@ngrx/store-devtools": "^3.2.2",
+    "@types/chai": "^3.4.34",
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.48",
     "angular2-platform-node": "~2.1.0-rc.1",
