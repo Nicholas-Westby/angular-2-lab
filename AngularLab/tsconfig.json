@@ -3,11 +3,20 @@
     "rootDir": ".",
     "baseUrl": ".",
     "outDir": "type-scripts.compiled",
+    "target": "es5",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "skipDefaultLibCheck": true
+    "skipDefaultLibCheck": true,
+    "lib": ["es6", "dom"],
+    "paths": {
+      "app" : ["./Client/app" ],
+      "app-shared": [ "./Client/shared" ],
+      "app-containers": [ "./Client/containers" ],
+      "app-components": [ "./Client/components" ]
+    },
+    "types": [
+      "node"
+    ]
   },
-  "files": [
-    "./type-scripts/typescript-main.ts"
-  ]
+  "exclude": ["node_modules"]
 }
